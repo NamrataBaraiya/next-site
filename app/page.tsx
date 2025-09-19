@@ -28,7 +28,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-white rounded-xl shadow text-center">
               <div className="text-indigo-600 text-4xl mb-4">🌍</div>
-              <h4 className="text-indigo-600 font-semibold text-xl mb-2">Wide Reach</h4>
+              <h4 className="text-indigo-600 font-semibold text-xl mb-2">Unlimited Contacts</h4>
               <p className="text-black">We cover multiple regions so you can send packages anywhere, anytime.</p>
             </div>
           </div>
