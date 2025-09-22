@@ -25,6 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+       <link rel="preload" href="/app/layout.css?v=175"as="style"/>
+      <noscript>
+        <link rel="stylesheet" href="/app/layout.css?v=175" />
+        </noscript>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
