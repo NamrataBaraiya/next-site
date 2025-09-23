@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
                          rounded-[5px] px-5 py-2.5 
                          transition-all duration-200 
                          hover:translate-y-[-4px] hover:shadow-lg' href='/contact'>Get Demo & Product Tour</Link>
+            <Button>Click me</Button>
           </div>
 
 
