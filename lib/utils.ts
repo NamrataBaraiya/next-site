@@ -1,4 +1,4 @@
-import { config } from "@/components/navbar-03/config";
+import { config } from "@/components/config";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
