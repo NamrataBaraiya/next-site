@@ -1,16 +1,87 @@
-import React from 'react'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-const page = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="space-y-3 max-w-3xl">
-        <h1 className="text-5xl font-semibol text-black">About page</h1>
-        <p className="text-gray-400">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-         </p>
-        </div>
-    </div>
-  )
+interface FaqItem {
+  id: string;
+  question: string;
+  answer: string;
 }
 
-export default page
+interface Faq1Props {
+  heading?: string;
+  items?: FaqItem[];
+}
+
+export default function FaqPage({
+  heading = "Frequently asked questions",
+  items = [
+    {
+      id: "faq-1",
+      question: "What is a FAQ?",
+      answer:
+        "A FAQ is a list of frequently asked questions and answers on a particular topic.",
+    },
+    {
+      id: "faq-2",
+      question: "What is the purpose of a FAQ?",
+      answer:
+        "The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.",
+    },
+    {
+      id: "faq-3",
+      question: "How do I create a FAQ?",
+      answer:
+        "To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.",
+    },
+    {
+      id: "faq-4",
+      question: "What are the benefits of a FAQ?",
+      answer:
+        "The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.",
+    },
+    {
+      id: "faq-5",
+      question: "How should I organize my FAQ?",
+      answer:
+        "You should organize your FAQ in a logical manner, grouping related questions together and ordering them from most basic to more advanced topics.",
+    },
+    {
+      id: "faq-6",
+      question: "How long should FAQ answers be?",
+      answer:
+        "FAQ answers should be concise and to the point, typically a few sentences or a short paragraph is sufficient for most questions.",
+    },
+    {
+      id: "faq-7",
+      question: "Should I include links in my FAQ?",
+      answer:
+        "Yes, including links to more detailed information or related resources can be very helpful for users who want to learn more about a particular topic.",
+    },
+  ],
+}: Faq1Props) {
+  return (
+    <section className="py-32 flex justify-center">
+      <div className="container max-w-3xl">
+        <h1 className="mb-4 text-3xl font-semibold md:mb-11 md:text-4xl">
+          {heading}
+        </h1>
+        <Accordion type="single" collapsible>
+          {items.map((item, index) => (
+            <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionTrigger className="font-semibold hover:no-underline">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
+}

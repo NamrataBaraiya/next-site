@@ -1,16 +1,82 @@
-import React from 'react'
+import React from "react";
+import { Star } from "lucide-react";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
-const page = () => {
+export default function PricingPage() {
+  const heading =
+    "A Collection of Components Built With Shadcn & Tailwind";
+  const description =
+    "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.";
+  const button = {
+    text: "Discover all components",
+    url: "https://next-site-red-mu.vercel.app/",
+  };
+  const reviews = {
+    count: 200,
+    rating: 5.0,
+    avatars: [
+      {
+        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+        alt: "Avatar 1",
+      },
+      {
+        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+        alt: "Avatar 2",
+      },
+      {
+        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+        alt: "Avatar 3",
+      },
+      {
+        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+        alt: "Avatar 4",
+      },
+      {
+        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+        alt: "Avatar 5",
+      },
+    ],
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="space-y-3 max-w-3xl">
-        <h1 className="text-5xl font-semibol text-black">Pricing page</h1>
-        <p className="text-gray-400">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-         </p>
+    <section className="py-32 flex justify-center">
+      <div className="container text-center">
+        <div className="mx-auto flex max-w-5xl flex-col gap-6">
+          <h1 className="text-3xl font-extrabold lg:text-6xl">{heading}</h1>
+          <p className="text-muted-foreground text-balance lg:text-lg">
+            {description}
+          </p>
         </div>
-    </div>
-  )
+        <Button asChild size="lg" className="mt-10">
+          <a href={button.url}>{button.text}</a>
+        </Button>
+        <div className="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">
+          <span className="mx-4 inline-flex items-center -space-x-4">
+            {reviews.avatars.map((avatar, index) => (
+              <Avatar key={index} className="size-14 border">
+                <AvatarImage src={avatar.src} alt={avatar.alt} />
+              </Avatar>
+            ))}
+          </span>
+          <div>
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, index) => (
+                <Star
+                  key={index}
+                  className="size-5 fill-yellow-400 text-yellow-400"
+                />
+              ))}
+              <span className="mr-1 font-semibold">
+                {reviews.rating.toFixed(1)}
+              </span>
+            </div>
+            <p className="text-muted-foreground text-left font-medium">
+              from {reviews.count}+ reviews
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default page
