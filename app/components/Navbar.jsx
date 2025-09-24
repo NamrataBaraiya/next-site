@@ -17,7 +17,7 @@ import React from 'react'
                   <Link href="/manifesto" className='text-grey'>Manifesto</Link>
                   <Link href="/our-todo-list" className='text-grey'>Our Todo List</Link>
                   <Link href="/" className='text-grey'>Demo</Link>
-                  <Link href="/" className='text-grey'>Login</Link>
+                  <Link href="/login" className='text-grey'>Login</Link>
                 </ul>
 
                 <div>

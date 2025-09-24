@@ -10,7 +10,7 @@ export default function PricingPage() {
     "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.";
   const button = {
     text: "Discover all components",
-    url: "https://next-site-red-mu.vercel.app/",
+    url: "https://www.shadcnblocks.com",
   };
   const reviews = {
     count: 200,
