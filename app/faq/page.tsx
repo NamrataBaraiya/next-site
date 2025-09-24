@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { footer } from "@/components/ui/footer";
 
 interface MenuItem {
   title: string;

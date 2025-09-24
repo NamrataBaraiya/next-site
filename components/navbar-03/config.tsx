@@ -78,3 +78,10 @@ export const travelMenuItems = [
     description: "Make every trip smooth and memorable.",
   },
 ];
+
+// Add appUrl here
+export const config = {
+  appUrl: "http://localhost:3000", // 🔹 Change to your actual app domain
+  foods,
+  travelMenuItems,
+};
