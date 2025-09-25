@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import { BackgroundPattern } from "./background-pattern";
 import Link from "next/link";
+import Image from 'next/image';
 
 const Hero06 = () => {
   return (
@@ -10,34 +11,49 @@ const Hero06 = () => {
       <BackgroundPattern />
 
       <div className="relative z-10 text-center max-w-3xl">
-        <Badge
-          variant="secondary"
-          className="rounded-full py-1 border-border"
-          asChild
-        >
-          <Link href="#">
-            Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
-          </Link>
-        </Badge>
+         <Image src="/assets/Program-badges.jpg" alt="logo" width="340" height="72" className="ml-auto mr-auto rounded-full"></Image>
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
           Send Cold Emails to inbox<br></br>
             without Gsuite Accounts.
         </h1>
-        <p className="mt-6 md:text-lg">
-          Fully Managed Email Infrastructure to send<br></br>
-          upto 15k emails per domain per month.
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-[#1a54f2]">
+          Fully Managed Email Infrastructure to send<br></br> upto <b>15k emails per domain</b> per month.
         </p>
-        <div className="mt-12 flex items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full text-base">
-            Start for Free<ArrowUpRight className="h-5! w-5!" />
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="rounded-full text-base shadow-none"
-          >
-            Get Demo & Product Tour <CirclePlay className="h-5! w-5!" />
-          </Button>
+        <div className="mt-12 flex-col items-center justify-center gap-4">
+          <div className="flex gap-x-4 gap-y-4 justify-center">
+                        <Link className='bg-gradient-to-t from-[#1A54F2] to-[#6E95FF] 
+                                 text-white font-inter text-[18px] font-light 
+                                 rounded-[5px] px-5 py-2.5 
+                                 transition-all duration-200 
+                                 hover:translate-y-[-4px] hover:shadow-lg' href='/contact'>Start for Free</Link>
+                           <Link className='bg-gradient-to-t from-[#1A54F2] to-[#6E95FF] 
+                                   text-white font-inter text-[18px] font-light 
+                                   rounded-[5px] px-5 py-2.5 
+                                   transition-all duration-200 
+                                   hover:translate-y-[-4px] hover:shadow-lg' href='/contact'>Get Demo & Product Tour</Link>
+          </div>
+          
+          <div className="flex gap-x-5 justify-center mt-[40px] w-[800px] ml-auto mr-auto">
+                      <div className="flex-row  gap-x-5 gap-y-4">
+                        <div className="flex items-start gap-x-5 gap-y-4 mt-2"> <Image className="rounded-full" src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className=" text-left">Doesn’t require GSuite or Mailbox Purchases</h3>
+                        </div>
+                        <div className="flex items-start gap-x-5 gap-y-4 mt-2"> <Image className="rounded-full" src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className=" text-left">Unlimited Mailbox Creation</h3>
+                        </div>
+                        <div className="flex items-start gap-x-5 gap-y-4 mt-2"> <Image className="rounded-full" src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className=" text-left">Built on Top Inbox Deliverability Techniques with Dedicated IP Pool</h3>
+                        </div>
+                      </div>
+                      <div className="flex-row  gap-x-5 gap-y-4">
+                        <div className="flex items-start gap-x-5 gap-y-4 mt-2"> <Image className="rounded-full" src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className="text-left">Handles All Setup & Auto Scales Infra</h3>
+                        </div>
+                        <div className="flex  items-start gap-x-5 gap-y-4 mt-2"> <Image className="rounded-full" src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className="text-left">Unlimited Contacts & Campaigns</h3>
+                        </div>
+                        <div className="flex items-start gap-x-5 gap-y-4 mt-2"> <Image className="rounded-full" src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className="text-left">Beats Instantly & Smartlead on both pricing + performance.</h3>
+                        </div>
+                      </div>
+            </div>
+
+
+
         </div>
       </div>
     </div>

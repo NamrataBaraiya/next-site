@@ -8,16 +8,18 @@ export default function Home() {
   return (
     <div>
     <Hero06></Hero06>
-    <div className="pt-32 pb-20">
+    <div className=" mt-[-100px]  pt-2 pb-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-black">
+          <div className="hidden">
+                   <h2 className="text-4xl md:text-6xl font-bold mb-6 text-black">
             <Image src="/assets/Program-badges.jpg" alt="logo" width="340" height="72" className="ml-auto mr-auto"></Image>
             Send Cold Emails to inbox<br></br>
-            without Gsuite Accounts.</h2>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-[#1a54f2]">
-          Fully Managed Email Infrastructure to send<br></br> upto <b>15k emails per domain</b> per month.
-        </p>
-          <div className="flex gap-x-4 gap-y-4 justify-center">
+                       without Gsuite Accounts.</h2>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-[#1a54f2]">
+                       Fully Managed Email Infrastructure to send<br></br> upto <b>15k emails per domain</b> per month.
+                    </p>
+          
+                    <div className="flex gap-x-4 gap-y-4 justify-center">
                <Link className='bg-gradient-to-t from-[#1A54F2] to-[#6E95FF] 
                        text-white font-inter text-[18px] font-light 
                        rounded-[5px] px-5 py-2.5 
@@ -29,8 +31,8 @@ export default function Home() {
                          transition-all duration-200 
                          hover:translate-y-[-4px] hover:shadow-lg' href='/contact'>Get Demo & Product Tour</Link>
             <Button>Click me</Button>
-          </div>
-
+                    </div>
+          
 
           <div className="flex gap-x-5 justify-center mt-[40px] w-[800px] ml-auto mr-auto">
             <div className="flex-row  gap-x-5 gap-y-4">
@@ -49,19 +51,27 @@ export default function Home() {
               <div className="flex items-start gap-x-5 gap-y-4 mt-2"> <Image src="/assets/check-icon.jpg" alt="logo" width="25" height="25" ></Image> <h3 className="text-black text-left">Beats Instantly & Smartlead on both pricing + performance.</h3>
               </div>
             </div>
-          </div>
+            </div>
+            </div>
 
           <div>
-            <video className="h-full w-full rounded-lg" controls autoPlay muted>
-                   <source src="/assets/Optimized-Video.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
-              </video>
+            <video
+  className="h-full w-full rounded-lg relative z-40"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src="/assets/Optimized-Video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
             </div>
 
         
       </div>
-      </div><div className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
+      </div><div className="py-20 bg-gray-50 ">
+        <div className="max-w-7xl mx-auto px-6 ">
           <h3 className="text-black text-3xl font-bold text-center mb-12">Why Choose Us?</h3>
           <div className="grid md:grid-cols-3 gap-10">
             <div className="p-6 bg-white rounded-xl shadow text-center">
