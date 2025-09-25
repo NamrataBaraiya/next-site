@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 export const BackgroundPattern = () => {
   const { resolvedTheme } = useTheme();
   const isLightTheme = resolvedTheme === "light";
+  const isDarkTheme = resolvedTheme === "dark";
 
   return (
     <>
@@ -29,6 +30,15 @@ export const BackgroundPattern = () => {
         color={isLightTheme ? "#000" : "#fff"}
         refresh
       />
+
+      <Particles
+        className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color={isDarkTheme ? "#fff" : "#000"}
+        refresh
+      />
+
     </>
   );
 };
