@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar03Page from "@/components/navbar-03/navbar-03";
-import { ThemeProvider } from "@/components/ui/theme-provider"
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Inter } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const interFont = Inter({
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "900"],
+  subsets: ["latin"], // Specify the necessary subsets
+  display: "swap", // Optional: controls how the font is displayed while loading
 });
 
 export const metadata: Metadata = {
@@ -27,24 +35,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-       <link rel="preload" href="/app/layout.css?v=175"as="style"/>
-      <noscript>
-        <link rel="stylesheet" href="/app/layout.css?v=175" />
+        <link rel="preload" href="/app/layout.css?v=175" as="style" />
+        <noscript>
+          <link rel="stylesheet" href="/app/layout.css?v=175" />
         </noscript>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} antialiased`}
       >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Navbar03Page></Navbar03Page>
-          
-          </ThemeProvider>
+        </ThemeProvider>
 
         {children}
       </body>

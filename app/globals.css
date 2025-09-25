@@ -119,3 +119,7 @@
   }
 }
 
+@theme {
+  --inter-font: var(--font-inter); /* variable from next/font */
+  --font-sans: "Inter", "system-ui", sans-serif;
+}
