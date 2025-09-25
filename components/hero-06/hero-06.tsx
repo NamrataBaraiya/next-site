@@ -16,7 +16,7 @@ const Hero06 = () => {
           Send Cold Emails to inbox<br></br>
             without Gsuite Accounts.
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-[#1a54f2]">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mt-6 text-[#1a54f2]">
           Fully Managed Email Infrastructure to send<br></br> upto <b>15k emails per domain</b> per month.
         </p>
         <div className="mt-12 flex-col items-center justify-center gap-4">

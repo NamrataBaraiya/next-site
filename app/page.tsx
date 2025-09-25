@@ -11,16 +11,17 @@ export default function Home() {
     <div className=" mt-[-100px]  pt-2 pb-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="hidden">
-                   <h2 className="text-4xl md:text-6xl font-bold mb-6 text-black">
-            <Image src="/assets/Program-badges.jpg" alt="logo" width="340" height="72" className="ml-auto mr-auto"></Image>
-            Send Cold Emails to inbox<br></br>
-                       without Gsuite Accounts.</h2>
-                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-[#1a54f2]">
+                   <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black">
+                            <Image src="/assets/Program-badges.jpg" alt="logo" width="340" height="72" className="ml-auto mr-auto"></Image>
+                                   Send Cold Emails to inbox<br></br>without Gsuite Accounts.
+                    </h1>
+            
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mt-6 text-[#1a54f2]">
                        Fully Managed Email Infrastructure to send<br></br> upto <b>15k emails per domain</b> per month.
                     </p>
           
-                    <div className="flex gap-x-4 gap-y-4 justify-center">
-               <Link className='bg-gradient-to-t from-[#1A54F2] to-[#6E95FF] 
+                    <div className="flex gap-x-4 gap-y-4 justify-center mt-12">
+              <Link className='bg-gradient-to-t from-[#1A54F2] to-[#6E95FF] 
                        text-white font-inter text-[18px] font-light 
                        rounded-[5px] px-5 py-2.5 
                        transition-all duration-200 
