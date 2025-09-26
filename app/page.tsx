@@ -7,6 +7,7 @@ import Hero06 from "@/components/hero-06/hero-06";
 export default function Home() {
   return (
     <div>
+      {/* Hero section & video */}
       <Hero06></Hero06>
       <div className=" mt-[-100px]  pt-2 pb-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
@@ -146,6 +147,76 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Broken the Rules */}
+      <div className="w-[900px] ml-auto mr-auto ">
+        <h2 className="text-[55px] font-medium leading-[60px] tracking-[-0.03em] text-center">
+          <span className="font-semibold">Impossible right?</span>
+          <br></br> Your first thought is <br></br> all the emails would go to
+          spam?<br></br>
+          <div className="rotate-[-1.82deg] mt-5 mb-8">
+            <span className="px-5 mt-8 rotate-[-1.82deg] py-2 rounded-[25px] shadow-[0px_11px_13.4px_0px_#268D4C40,0px_7px_12.3px_0px_#FFFFFF47_inset,-1px_-7px_4px_0px_#741B1B33_inset] bg-[linear-gradient(180.45deg,#93E868_72.49%,#1BA91B_93.05%,#13621B_98.19%,#12502F_108.48%)]">
+              <span className="font-bold bg-[linear-gradient(0deg,#2D5B33,#2D5B33),linear-gradient(0deg,rgba(45,91,51,1),rgba(45,91,51,1))] bg-clip-text text-[#0003]">
+                we have broken the rules.
+              </span>
+            </span>
+          </div>
+        </h2>
+      </div>
+
+      {/* Wondering How */}
+      <div>
+        <h2 className="text-[55px] font-semibold mt-40 leading-[60px] tracking-[-0.03em] text-center">
+          Wondering how?
+        </h2>
+
+        <div className="w-[900px] ml-auto mr-auto flex flex-col gap-y-10 pt-10 pb-36 ">
+          <div>
+            <h3 className="text-[35px] font-medium leading-[60px] tracking-[-0.03em] text-[#143796]">
+              You add a domain.
+            </h3>
+            <p className="text-[20px] font-medium leading-[20px] tracking-[-0.03em] text-[#595959]">
+              ( tryexample.com )
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-[35px] font-medium leading-[60px] tracking-[-0.03em] text-[#143796]">
+              We create multiple sub-domains for it.
+            </h3>
+            <p className="text-[20px] font-medium leading-[20px] tracking-[-0.03em] text-[#595959]">
+              ( m.tryexample.com / mail.tryexample.com / a.tryexample.com & so
+              on )
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-[35px] font-medium leading-[60px] tracking-[-0.03em] text-[#143796]">
+              We create emails accounts on each sub-domain
+            </h3>
+            <p className="text-[20px] font-medium leading-[20px] tracking-[-0.03em] text-[#595959]">
+              ( name@m.tryexample.com / name@mail.tryexample.com /
+              name@a.tryexample.com & so on )
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-[35px] font-medium leading-[60px] tracking-[-0.03em] text-[#143796]">
+              Each Email sends email to only 10 contacts.
+            </h3>
+            <p className="text-[20px] font-medium leading-[20px] tracking-[-0.03em] text-[#595959]">
+              ( name@m.tryexample.com / name@mail.tryexample.com /
+              name@a.tryexample.com & so on )
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Tested & Tried */}
+      <div>
+        <h3></h3>
+      </div>
+
       <div className="py-20 bg-gray-50 ">
         <div className="max-w-7xl mx-auto px-6 ">
           <h3 className="text-black text-3xl font-bold text-center mb-12">

@@ -9,7 +9,7 @@ const Hero06 = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-6">
       <BackgroundPattern />
-
+      {/* Hero Section */}
       <div className="relative z-10 text-center max-w-5xl">
         <Image
           src="/assets/Program-badges.jpg"
@@ -53,7 +53,7 @@ const Hero06 = () => {
             <div className="flex-row  gap-x-5 gap-y-4">
               <div className="flex items-start gap-x-5 gap-y-4 mt-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mt-1"
                   src="/assets/check-icon.jpg"
                   alt="logo"
                   width="25"
@@ -65,7 +65,7 @@ const Hero06 = () => {
               </div>
               <div className="flex items-start gap-x-5 gap-y-4 mt-[15px] mb-[15px] ">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mt-1"
                   src="/assets/check-icon.jpg"
                   alt="logo"
                   width="25"
@@ -77,7 +77,7 @@ const Hero06 = () => {
               </div>
               <div className="flex items-start gap-x-5 gap-y-4 mt-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mt-1"
                   src="/assets/check-icon.jpg"
                   alt="logo"
                   width="25"
@@ -92,7 +92,7 @@ const Hero06 = () => {
             <div className="flex-row  gap-x-5 gap-y-4">
               <div className="flex items-start gap-x-5 gap-y-4 mt-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mt-1"
                   src="/assets/check-icon.jpg"
                   alt="logo"
                   width="25"
@@ -104,7 +104,7 @@ const Hero06 = () => {
               </div>
               <div className="flex  items-start gap-x-5 gap-y-4 mt-[15px] mb-[15px]">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mt-1"
                   src="/assets/check-icon.jpg"
                   alt="logo"
                   width="25"
@@ -116,7 +116,7 @@ const Hero06 = () => {
               </div>
               <div className="flex items-start gap-x-5 gap-y-4 mt-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mt-1"
                   src="/assets/check-icon.jpg"
                   alt="logo"
                   width="25"
@@ -130,6 +130,7 @@ const Hero06 = () => {
           </div>
         </div>
       </div>
+      {/*Broken Rules Text Section */}
     </div>
   );
 };
