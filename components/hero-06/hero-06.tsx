@@ -39,10 +39,9 @@ const Hero06 = () => {
               Start for Free
             </Link>
             <Link
-              className="bg-gradient-to-t from-[#1A54F2] to-[#6E95FF] 
-                                   text-white font-inter text-[18px] font-light 
-                                   rounded-[5px] px-5 py-2.5 
-                                   transition-all duration-200 
+              className="bg-transparent font-sans text-[18px] font-light fill-black text-black 
+         [background-image:linear-gradient(360deg,#fff_65%,#fff_117%)]
+         border border-[0.5px] border-black/50 rounded-md px-5 py-[10px] transition-all duration-200
                                    hover:translate-y-[-4px] hover:shadow-lg"
               href="/contact"
             >
@@ -50,7 +49,7 @@ const Hero06 = () => {
             </Link>
           </div>
 
-          <div className="flex gap-x-5 justify-center w-[800px] mt-[40px] ml-auto mr-auto">
+          <div className="flex gap-x-10 justify-center w-[950px] mt-[40px] ml-auto mr-auto">
             <div className="flex-row  gap-x-5 gap-y-4">
               <div className="flex items-start gap-x-5 gap-y-4 mt-2">
                 <Image
@@ -60,11 +59,11 @@ const Hero06 = () => {
                   width="25"
                   height="25"
                 ></Image>
-                <h3 className=" text-left text-7">
+                <h3 className=" text-left text-7 text-[20px] font-normal tracking-[-0.3px]">
                   Doesn’t require GSuite or Mailbox Purchases
                 </h3>
               </div>
-              <div className="flex items-start gap-x-5 gap-y-4 mt-2">
+              <div className="flex items-start gap-x-5 gap-y-4 mt-[15px] mb-[15px] ">
                 <Image
                   className="rounded-full"
                   src="/assets/check-icon.jpg"
@@ -72,7 +71,7 @@ const Hero06 = () => {
                   width="25"
                   height="25"
                 ></Image>
-                <h3 className=" text-left text-7">
+                <h3 className=" text-left text-7 text-[20px] font-normal tracking-[-0.3px]">
                   Unlimited Mailbox Creation
                 </h3>
               </div>
@@ -84,7 +83,7 @@ const Hero06 = () => {
                   width="25"
                   height="25"
                 ></Image>{" "}
-                <h3 className=" text-left text-7">
+                <h3 className=" text-left text-7 text-[20px] font-normal tracking-[-0.3px]">
                   Built on Top Inbox Deliverability Techniques with Dedicated IP
                   Pool
                 </h3>
@@ -99,11 +98,11 @@ const Hero06 = () => {
                   width="25"
                   height="25"
                 ></Image>
-                <h3 className="text-left text-7">
+                <h3 className="text-left text-7 text-[20px] font-normal tracking-[-0.3px]">
                   Handles All Setup & Auto Scales Infra
                 </h3>
               </div>
-              <div className="flex  items-start gap-x-5 gap-y-4 mt-2">
+              <div className="flex  items-start gap-x-5 gap-y-4 mt-[15px] mb-[15px]">
                 <Image
                   className="rounded-full"
                   src="/assets/check-icon.jpg"
@@ -111,7 +110,7 @@ const Hero06 = () => {
                   width="25"
                   height="25"
                 ></Image>
-                <h3 className="text-left text-7">
+                <h3 className="text-left text-7 text-[20px] font-normal tracking-[-0.3px]">
                   Unlimited Contacts & Campaigns
                 </h3>
               </div>
@@ -123,7 +122,7 @@ const Hero06 = () => {
                   width="25"
                   height="25"
                 ></Image>
-                <h3 className="text-left text-7">
+                <h3 className="text-left text-7 text-[20px] font-normal tracking-[-0.3px]">
                   Beats Instantly & Smartlead on both pricing + performance.
                 </h3>
               </div>
