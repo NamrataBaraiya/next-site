@@ -282,12 +282,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" w-[1140px] flex-row-reverse  gap-x-5 ml-auto mr-auto">
-            <div className="w-[40%] bg-white rounded-[25px] flex justify-center items-center ">
-              <h3 className="font-geist text-[55px] font-bold leading-[60px] tracking-[-0.03em] text-center">
-                Unlimited Contacts
-              </h3>{" "}
-            </div>
+          <div className=" w-[1140px] flex gap-x-5 ml-auto mr-auto">
             <div className="w-[60%] bg-white pt-5 pl-5 pr-5 rounded-[25px]">
               <Image
                 className="rounded-t-[15px]"
@@ -296,6 +291,12 @@ export default function Home() {
                 width="630"
                 height="294"
               ></Image>
+            </div>
+
+            <div className="w-[40%] bg-white rounded-[25px] flex justify-center items-center ">
+              <h3 className="font-geist text-[55px] font-bold leading-[60px] tracking-[-0.03em] text-center">
+                Unlimited Contacts
+              </h3>{" "}
             </div>
           </div>
 
