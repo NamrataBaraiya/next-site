@@ -232,7 +232,7 @@ export default function Home() {
       <div className="w-[900px] ml-auto mr-auto mt-40 mb-40  ">
         <h2 className="text-[55px] font-medium leading-[60px] tracking-[-0.03em] text-center">
           <span className="font-semibold">what’s the catch?</span>
-          <h3 className="elementor-heading-title elementor-size-default text-[#1A54F2]">
+          <span className="elementor-heading-title elementor-size-default text-[#1A54F2]">
             your <b>user-reported</b> spam<br></br>
             should be
             <div
@@ -249,7 +249,7 @@ export default function Home() {
                 under 0.3%
               </span>
             </div>
-          </h3>
+          </span>
         </h2>
         <p className="font-sans mt-7 text-[35px] font-medium leading-[45px] tracking-[-0.03em] text-center">
           What if it goes beyond that?<br></br> Your domain reputation gets hit.
@@ -282,7 +282,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" w-[1140px] flex gap-x-5 ml-auto mr-auto">
+          <div className=" w-[1140px] flex gap-x-5 ml-auto mr-auto mt-5 mb-5">
             <div className="w-[60%] bg-white pt-5 pl-5 pr-5 rounded-[25px]">
               <Image
                 className="rounded-t-[15px]"
