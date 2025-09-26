@@ -214,7 +214,108 @@ export default function Home() {
 
       {/* Tested & Tried */}
       <div>
-        <h3></h3>
+        <h2 className="text-[55px] font-semibold leading-[60px] tracking-[-0.03em] text-center text-[#840C0C]">
+          You think this won’t work right?
+        </h2>
+        <h3 className="text-[55px] font-medium leading-[60px] tracking-[-0.03em] text-center">
+          Sorry to break your heart. It does.<br></br> We have
+          <div className="inline-block bg-[linear-gradient(180.45deg,#D068E8_72.49%,#941BA9_93.05%,#4F0750_98.19%,#DD50AB_108.48%)] rounded-[25px] rotate-[-3deg] shadow-[0px_11px_13.4px_0px_#00000040,0px_7px_12.3px_0px_#FFFFFF47_inset,-1px_-7px_4px_0px_#741B1B33_inset] leading-[51px] text-[45px] px-[22px] py-[10px]">
+            <span className="inline-block p-0 bg-[linear-gradient(0deg,#5B2D5A,#5B2D5A),linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2))] bg-clip-text text-transparent font-bold tracking-[-1px]">
+              tested & tried
+            </span>
+          </div>
+          it out.
+        </h3>
+      </div>
+
+      {/* what’s the catch? */}
+      <div className="w-[900px] ml-auto mr-auto mt-40 mb-40  ">
+        <h2 className="text-[55px] font-medium leading-[60px] tracking-[-0.03em] text-center">
+          <span className="font-semibold">what’s the catch?</span>
+          <h3 className="elementor-heading-title elementor-size-default text-[#1A54F2]">
+            your <b>user-reported</b> spam<br></br>
+            should be
+            <div
+              className="inline-block bg-[linear-gradient(180.45deg,#E8B968_72.49%,#A95D1B_93.05%,#593B0F_98.19%,#593B0F_108.48%)] 
+             shadow-[0px_11px_13.4px_0px_#00000040,0px_7px_12.3px_0px_#FFFFFF47_inset,-1px_-7px_4px_0px_#741B1B33_inset,0.5px_0.5px_0px_0px_#FFFFFF61_inset,1px_1px_1.6px_0px_#00000040_inset] 
+             rounded-[25px] px-[22px] py-[10px] pb-[15px] leading-[51px] rotate-[2.41deg]"
+            >
+              <span
+                className="font-geist text-[45px] p-0 font-bold tracking-[-1px] 
+             bg-[linear-gradient(0deg,#4E2728,#4E2728),linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2))] 
+             bg-clip-text text-transparent"
+              >
+                {" "}
+                under 0.3%
+              </span>
+            </div>
+          </h3>
+        </h2>
+        <p className="font-sans mt-7 text-[35px] font-medium leading-[45px] tracking-[-0.03em] text-center">
+          What if it goes beyond that?<br></br> Your domain reputation gets hit.
+          You<br></br> then add a fresh new domain and<br></br> continue the
+          game.
+        </p>
+      </div>
+
+      {/* Cold Email Campaigns */}
+      <div className="bg-[#F1F4FF] pb-40">
+        <h3 className="text-[55px] pt-[100px] pb-[20px] font-semibold mt-40 leading-[60px] tracking-[-0.03em] text-center">
+          Scale Your Cold Email Campaigns<br></br> Without Limits.
+        </h3>
+
+        <div className="flex-col gap-5">
+          <div className=" w-[1140px] flex gap-x-5 ml-auto mr-auto">
+            <div className="w-[40%] bg-white  rounded-[25px] flex justify-center items-center ">
+              <h3 className="font-geist text-[55px] font-bold leading-[60px] tracking-[-0.03em] text-center">
+                Unlimited Mailboxes
+              </h3>{" "}
+            </div>
+            <div className="w-[60%] bg-white pt-5 pl-5 pr-5 rounded-[25px]">
+              <Image
+                className="rounded-t-[15px]"
+                src="/assets/Mail-box.jpg"
+                alt="logo"
+                width="630"
+                height="294"
+              ></Image>
+            </div>
+          </div>
+
+          <div className=" w-[1140px] flex-row-reverse  gap-x-5 ml-auto mr-auto">
+            <div className="w-[40%] bg-white rounded-[25px] flex justify-center items-center ">
+              <h3 className="font-geist text-[55px] font-bold leading-[60px] tracking-[-0.03em] text-center">
+                Unlimited Contacts
+              </h3>{" "}
+            </div>
+            <div className="w-[60%] bg-white pt-5 pl-5 pr-5 rounded-[25px]">
+              <Image
+                className="rounded-t-[15px]"
+                src="/assets/Unlimited-Contacts.png"
+                alt="logo"
+                width="630"
+                height="294"
+              ></Image>
+            </div>
+          </div>
+
+          <div className=" w-[1140px] flex gap-x-5 ml-auto mr-auto">
+            <div className="w-[40%] bg-white rounded-[25px] flex justify-center items-center ">
+              <h3 className="font-geist text-[55px] font-bold leading-[60px] tracking-[-0.03em] text-center">
+                Unlimited Reputation Builder
+              </h3>{" "}
+            </div>
+            <div className="w-[60%] bg-white pt-5 pl-5 pr-5 rounded-[25px]">
+              <Image
+                className="rounded-t-[15px]"
+                src="/assets/Auto-Dedicated-IP-768x358.png"
+                alt="logo"
+                width="630"
+                height="294"
+              ></Image>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="py-20 bg-gray-50 ">
