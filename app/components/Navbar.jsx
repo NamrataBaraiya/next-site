@@ -7,8 +7,8 @@ import React from 'react'
   return (
     <>
           <nav className=' max-w-[1140px] ml-auto mr-auto py-4 flex items-center justify-between z-50'>
-              <div>       
-                  <Link href="/"> <Image src="/assets/deliverymanAI logo.png" alt="logo" width="265" height="42"></Image> </Link>
+                <div >       
+                  <Link  href="/"> <Image src="/assets/deliverymanAI logo.png" alt="logo" width="265" height="42"></Image> </Link>
                 </div>
               
                 <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-black '>

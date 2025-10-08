@@ -6,12 +6,12 @@ import Link from "next/link";
 const Page = () => {
   return (
     <div className="min-h-screen px-6 py-12 flex flex-col items-center">
-      <div className="max-w-6xl space-y-8 font-[Inter] text-[25px] font-normal leading-[48px] tracking-[-0.03em] text-black 
+      <div className="max-w-6xl space-y-8 font-[Inter] text-[25px] font-normal leading-[48px] tracking-[-0.03em] text-black dark:text-white
         max-md:text-[16px] max-md:leading-[1.2em] max-sm:text-[16px] max-sm:leading-[1.2em]">
 
         {/* Header Section */}
         <section className="space-y-4 mt-34 max-md:mt-14 max-sm:mt-14">
-          <h1 className="pt-[30px] pb-[60px] text-center font-[Geist] text-[45px]  leading-[51px] font-semibold tracking-[-0.03em] text-black 
+          <h1 className="pt-[30px] pb-[60px] text-center font-[Geist] text-[45px]  leading-[51px] font-semibold tracking-[-0.03em] text-black dark:text-white
             max-md:text-[34px] pb-[20px] max-sm:text-[34px] pb-[20px]">
             Spending hours writing the perfect email… <br /> that never gets seen.
           </h1>
@@ -98,7 +98,7 @@ const Page = () => {
         </section>
 
         {/* Image Section */}
-        <section className="space-y-4 px-6 py-12 text-center flex flex-col items-center">
+        <section className="space-y-4 px-6 py-12 text-center flex flex-col items-center dark:bg-white">
           <div className="my-6 flex justify-center items-center gap-[60px] max-md:gap-[40px] my-4 max-sm:gap-[20px] my-4 flex-wrap">
             <img
               src="/assets/Amin-1.webp"
@@ -122,21 +122,4 @@ const Page = () => {
   );
 };
 
-export default Page;
-=======
-import React from 'react'
-
-const page = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="space-y-3 max-w-3xl">
-        <h1 className="text-5xl font-semibol text-black">manifesto page</h1>
-        <p className="text-gray-400">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-         </p>
-        </div>
-    </div>
-  )
-}
-
-export default page
+export default Page
